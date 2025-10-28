@@ -1,3 +1,4 @@
 Тема: Онлайн магазин игр
-![photos](https://github.com/user-attachments/assets/36c563c5-00cc-41fe-9bcd-5d4da2509baf)
+![ratata](https://github.com/user-attachments/assets/09290178-6a37-4392-bada-db2c30281bf4)
+
 
