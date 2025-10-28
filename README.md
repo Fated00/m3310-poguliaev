@@ -1,2 +1,3 @@
 Тема: Онлайн магазин игр
-![ratata](https://github.com/user-attachments/assets/9010ec98-20ad-43b6-9b1d-d98af489d197)
+![photos](https://github.com/user-attachments/assets/36c563c5-00cc-41fe-9bcd-5d4da2509baf)
+
