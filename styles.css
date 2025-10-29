@@ -1,11 +1,14 @@
 body {
     font-family: "Montserrat", sans-serif ;
     color: #ffffff;
+    background-color: #1d1d1d;
     margin: 0;
 }
 
 header {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -17,16 +20,17 @@ header {
     margin-left: 50px;
 }
 
-.header__nav-menu {
+.nav__list {
     list-style: none;
     display: flex;
+    margin-right: 50px;
 }
 
-.header__nav-menu__item {
+.nav__item {
     margin-left: 20px;
 }
 
-.header__nav-menu__link {
+.nav__link {
     text-decoration: none;
     color: #ffffff;
 }
@@ -45,6 +49,7 @@ header {
     width: 400px;
     line-height: 48px;
     margin-left: 150px;
+    margin-top: 150px;
 }
 
 .main__cover-new-game-description {
@@ -63,16 +68,9 @@ header {
     background-color: #000000;
 }
 
-.shop-by-category {
-    background-color: #1d1d1d;
-}
-
-.shop-by-category__title,
-.best-sellers__title,
-.trending-games__title {
+.title {
     font-size: 36px;
-    margin: 0;
-    margin-left: 125px;
+    margin: 0 0 0 125px;
     padding-top: 50px;
     text-transform: uppercase;
 }
@@ -84,11 +82,16 @@ header {
     color: #ffffff;
 }
 
-.shop-by-category__gallery,
 .best-sellers__gallery,
 .trending-games__gallery {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
+    padding: 20px;
+}
+
+.shop-by-category__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     padding: 20px;
 }
 
@@ -121,16 +124,57 @@ header {
     transform: scale(1.05);
 }
 
-.quote__title {
-    font-size: 36px;
-    margin-left: 125px;
-    padding-top: 50px;
-    color: black;
+.game-table {
+    margin: 50px 50px 100px 125px;
 }
 
-.quote__description {
-    margin-left: 125px;
-    padding-top: 50px;
-    text-decoration: underline;
-    color: black;
+.table-header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.table-row:nth-child(even) {
+    background-color: #333;
+}
+
+.table-cell {
+    border: 1px #ffffff solid;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1d1d1d;
+}
+
+.products__list, .policy__list, .store__list {
+    list-style: none;
+    padding: 0;
+}
+
+.products__link, .policy__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.products__item, .policy__item, .store__item {
+    margin-bottom: 15px;
+}
+
+.products__title, .policy__title, .store__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1230px) {
+    .main__cover-poster {
+        display: none;
+    }
 }
