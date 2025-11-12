@@ -4,4 +4,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     paragraph.textContent = String(gallery.length) + ' products';
 })
-

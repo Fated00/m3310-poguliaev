@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+.header__title {
+    font-family: "Righteous", sans-serif;
+    margin-left: 50px;
+}
+
+.header__nav {
+    margin-right: 100px;
+}
+
+.nav__link {
+    text-decoration: none;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.nav__link:hover {
+    background-color: #1658BC;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.highlight {
+    border: #1658BC 1px solid;
+    border-radius: 5px;
+}

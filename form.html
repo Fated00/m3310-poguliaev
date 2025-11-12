@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+
+      <link rel="stylesheet" href="header-style.css">
+      <link rel="stylesheet" href="form-style.css">
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+      <script src="active-menu.js"></script>
+      <title>Title</title>
+  </head>
+  <body>
+    <header>
+        <h1 class="header__title">arcade</h1>
+        <nav class="header__nav">
+          <a class="nav__link" href="index.html">Home</a>
+          <a class="nav__link" href="products.html">Products</a>
+          <a class="nav__link" href="onsale.html">On Sale</a>
+          <a class="nav__link" href="form.html">Your Collection</a>
+          <a class="nav__link" href="#contacts">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+      <section class="skins">
+        <h2 class="skins-title">CS 2: Your skins collection</h2>
+
+        <form class="skins-form">
+          <label class="name-label">
+            Name
+            <input class="name-input" type="text" placeholder="Blaze" autocomplete="off" required>
+          </label>
+
+          <div class="divider"></div>
+
+          <label class="weapon-label">
+            Weapon
+            <select class="weapon-select" name="weapon" autocomplete="off" required>
+              <option class="weapon-option" value="" selected>None</option>
+              <option class="weapon-option">AK-47</option>
+              <option class="weapon-option">M4A1-S</option>
+              <option class="weapon-option">M4A4</option>
+              <option class="weapon-option">AUG</option>
+              <option class="weapon-option">FAMAS</option>
+              <option class="weapon-option">Galil AR</option>
+              <option class="weapon-option">UMP-45</option>
+              <option class="weapon-option">AWP</option>
+              <option class="weapon-option">USP-S</option>
+              <option class="weapon-option">P250</option>
+              <option class="weapon-option">Tec-9</option>
+              <option class="weapon-option">Glock-18</option>
+              <option class="weapon-option">Desert Eagle</option>
+              <option class="weapon-option">Karambit Knife</option>
+              <option class="weapon-option">M9 Bayonet Knife</option>
+              <option class="weapon-option">Huntsman Knife</option>
+              <option class="weapon-option">Falchion Knife</option>
+              <option class="weapon-option">Butterfly Knife</option>
+              <option class="weapon-option">Bowie Knife</option>
+              <option class="weapon-option">Gut Knife</option>
+              <option class="weapon-option">Stiletto Knife</option>
+            </select>
+          </label>
+
+          <div class="divider"></div>
+
+          <fieldset >
+            <legend>Quality</legend>
+
+            <label class="radio-label">
+              <input class="radio-input common" type="radio" name="quality" value="Common" autocomplete="off" required>
+              Common
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input uncommon" type="radio" name="quality" value="Uncommon" autocomplete="off">
+              Uncommon
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input rare" type="radio" name="quality"  value="Rare" autocomplete="off">
+              Rare
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input mythical" type="radio" name="quality"  value="Mythical" autocomplete="off">
+              Mythical
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input legendary" type="radio" name="quality"  value="Legendary" autocomplete="off">
+              Legendary
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input ancient" type="radio" name="quality"  value="Ancient" autocomplete="off">
+              Ancient
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input exceedingly" type="radio" name="quality"  value="Exceedingly Rare" autocomplete="off">
+              Exceedingly Rare
+            </label>
+
+            <label class="radio-label">
+              <input class="radio-input immortal" type="radio" name="quality"  value="Immortal" autocomplete="off">
+              Immortal
+            </label>
+          </fieldset>
+
+          <div class="divider"></div>
+
+          <label class="exterior-label">
+            Exterior
+            <select class="exterior-select" name="exterior" autocomplete="off" required>
+              <option selected class="exterior-option" value="">None</option>
+              <option class="exterior-option">Factory New</option>
+              <option class="exterior-option">Minimal Wear</option>
+              <option class="exterior-option">Field-Tested</option>
+              <option class="exterior-option">Well-Worn</option>
+              <option class="exterior-option">Battle-Scarred</option>
+            </select>
+          </label>
+
+          <div class="divider"></div>
+
+          <label class="price-label">
+            Price
+            <input class="price-input" type="number" placeholder="0.00" autocomplete="off" required>
+          </label>˘
+
+          <div class="buttons-wrapper">
+            <button class="save" type="submit">Save</button>
+            <button class="clear" type="button">Clear</button>
+          </div>
+        </form>
+
+        <div class="skins-table"></div>
+      </section>
+
+      <template id="table-row-template">
+        <div class="table-row">
+          <span class="table-cell table-cell-name"></span>
+          <span class="table-cell table-cell-weapon"></span>
+          <span class="table-cell table-cell-quality"></span>
+          <span class="table-cell table-cell-exterior"></span>
+          <span class="table-cell table-cell-price"></span>
+          <button class="edit" type="button">Edit</button>
+          <button class="delete" type="button">Delete row</button>
+        </div>
+      </template>
+    </main>
+
+    <script src="form-submission.js"></script>
+  </body>
+</html>

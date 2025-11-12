@@ -5,36 +5,6 @@ body {
     margin: 0;
 }
 
-header {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: black;
-}
-
-.header__title {
-    font-family: "Righteous", sans-serif;
-    margin-left: 50px;
-}
-
-.nav__list {
-    list-style: none;
-    display: flex;
-    margin-right: 50px;
-}
-
-.nav__item {
-    margin-left: 20px;
-}
-
-.nav__link {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .main__cover {
     display: flex;
     justify-content: space-between;
@@ -61,6 +31,9 @@ header {
 
 .main__cover-poster {
     border-radius: 10%;
+    width: 760px;
+    position: relative;
+    bottom: -166.45px;
 }
 
 .best-sellers,
@@ -148,7 +121,7 @@ header {
     text-align: center;
 }
 
-footer {
+.footer__contacts {
     display: flex;
     justify-content: space-around;
     background-color: #1d1d1d;
@@ -167,6 +140,11 @@ footer {
 .products__item, .policy__item, .store__item {
     margin-bottom: 15px;
 }
+
+.footer__page-load {
+    margin-left: 120px;
+}
+
 
 .products__title, .policy__title, .store__title {
     font-size: 20px;

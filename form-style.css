@@ -1,0 +1,197 @@
+:root {
+    --color-common: #f0f0f0;
+    --color-uncommon: #7b9ef3;
+    --color-rare: #3260fd;
+    --color-mythical: #aa43fa;
+    --color-legendary: #ff20e8;
+    --color-ancient: #ff3d3d;
+    --color-exceedingly: #fee618;
+    --color-immortal: #fe8430;
+    --color-border: #3b3939;
+}
+
+body {
+    font-family: "Montserrat", sans-serif ;
+    color: #ffffff;
+    background-color: #1d1d1d;
+    margin: 0;
+}
+
+input, select, button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1d1d1d;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-top: 25px;
+    border: 1px solid #1d1d1d;
+}
+
+form > label, legend {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.divider {
+    background-image: linear-gradient(#1d1d1d, #3b3939);
+    margin: 30px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.skins-title {
+    font-size: 36px;
+    margin: 0 0 0 75px;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.skins-form {
+    margin: 0 0 0 50px;
+}
+
+.radio-label {
+    margin-top: 10px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-input {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+}
+
+.radio-input:checked {
+    transition: 800ms;
+}
+
+.common:checked {
+    background: var(--color-common);
+}
+
+.uncommon:checked {
+    background: var(--color-uncommon);
+}
+
+.rare:checked {
+    background: var(--color-rare)
+}
+
+.mythical:checked {
+    background: var(--color-mythical)
+}
+
+.legendary:checked {
+    background: var(--color-legendary)
+}
+
+.ancient:checked {
+    background: var(--color-ancient)
+}
+
+.exceedingly:checked {
+    background: var(--color-exceedingly)
+}
+
+.immortal:checked {
+    background: var(--color-immortal)
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.buttons-wrapper {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.save {
+    background-color: #07F;
+}
+
+.save:hover {
+    background-color: #006BE6;
+}
+
+.clear {
+    background-color: #FFF;
+    color: #000;
+}
+
+.clear:hover {
+    border: 1px solid #0277FF;
+    color: #0277FF;
+}
+
+.skins-table {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    border-top: 1px solid var(--color-table-border);
+    border-bottom: 1px solid var(--color-table-border);
+    padding: 20px;
+}
+
+.table-header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.delete {
+    background-color: crimson;
+}
+
+.delete:hover {
+    background-color: #b71c1c;
+}
+
+.edit {
+    background-color: #4CAF50;
+    width: 150px;
+    height: 40px;
+}
+
+.edit:hover {
+    background-color: #45a049;
+}
+
+.table-row button {
+    width: 150px;
+    height: 40px;
+}
